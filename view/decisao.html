@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/style_global.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <title>PHP. | Estrutura de decisao</title>
+
+  <style>
+    .icon {
+      white-space: nowrap;
+      align-items: center;
+      flex-wrap: nowrap;
+      display: flex;
+      justify-content: center;
+      font-size: 160px;
+    }
+
+    .bi {
+      font-size: 160px;
+    }
+
+    .bi-piggy-bank-fill {
+      z-index: 0;
+    }
+
+    .bi-coin {
+      z-index: 99;
+      position: absolute;
+      font-size: 50px;
+      right: 44%;
+      top: -2%;
+    }
+
+    .container .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    button,
+    span {
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body data-bs-theme="light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-4" href="./index.html">
+        <img src="../assets/images/logo_php.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-4">
+            <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="./projeto.html">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quemsomos.html">Quem Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN SECTION -->
+
+  <section class="php mt-5">
+    <div class="container text-center">
+
+
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="section-title text-center" data-aos="fade-down">
+            <h1 class="display-5 fw-semibold">O que são estruturas de decisão ?</h1>
+          </div>
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+            A estrutura da tomada de decisão na programação refere-se à capacidade de um programa de fazer
+            escolhas lógicas com base
+            em condições específicas. É uma parte fundamental da lógica de controle em muitas linguagens de
+            programação, permitindo que
+            um programa execute diferentes blocos de código dependendo do resultado de expressões booleanas
+            (verdadeiro ou falso).
+            <br><br>
+            Existem várias formas comuns de estruturas de tomada de decisão na programação, tais como:
+          </p>
+
+          <h2 style="font-size: 30px; margin-top: 40px;"><b>Declarações if:</b></h2>
+          <br><br>
+
+          <img class="align-self-center" src="../assets/images/estrutura-decisao.jpg" width="50%" height="8%" alt="" />
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+            O laço if é uma estrutura de controle fundamental em programação que permite que o programa tome
+            decisões
+            com base em condições específicas. Basicamente, o if permite, por exemplo que você avalie uma
+            expressão booleana (verdadeira ou falsa)
+            e execute um bloco de código se essa condição for verdadeira. O laço if permite também que o
+            usuário possa verificar outros tipos de condições
+            como equidade entre valores, qual valor é maior, casos de duas ou mais condições verdadeiras em
+            uma mesma estrutura de decisão, e vários outros
+            casos.
+          </p>
+
+
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+            <b>if:</b>
+            Uma declaração if é usada para executar um bloco de código se uma condição especificada for
+            verdadeira.
+            Ela geralmente é escrita na forma:
+          </p>
+          <br>
+
+          <div class="code">
+            <p class="code-title">php</p>
+            <p>
+              <span class="pink">$idade <span class="white">=</span> 20</span>;
+
+              <span class="blue">if</span> (<span class="pink">$idade</span> >= <span class="pink">18</span>) {
+              <span class="blue">echo</span> <span class="gream">"Você é maior de idade"</span>;
+              }
+
+            </p>
+          </div>
+          <br>
+
+          <p class="txt text-dark mt-3" style="font-size: 18px;">
+            <b>if-else: </b>
+            A declaração if-else é usada para executar um bloco de código se a condição especificada for
+            verdadeira e outro bloco
+            de código se a condição for falsa. É escrita na forma:
+          </p>
+          <br>
+
+          <div class="code">
+
+            <div class="code-title">
+              <p class="language">php</p>
+            </div>
+
+            <p>
+              <span class="pink">$idade <span class="white">=</span> 20</span>;
+
+              <span class="blue">if</span> (<span class="pink">$idade</span> >= <span class="pink">18</span>) {
+              <span class="blue">echo</span> <span class="gream">"Você é maior de idade"</span>;
+              } <span class="blue">else</span> {
+              <span class="blue">echo</span> <span class="gream">"Você é menor de idade"</span>;
+              }
+
+            </p>
+          </div>
+          <br>
+
+          <p class="txt text-dark mt-3" style="font-size: 18px;">
+            <b>if-elif-else: </b>
+            Esta estrutura é uma extensão da if-else e permite testar múltiplas condições. É escrita na
+            forma:
+          </p>
+          <br>
+
+          <div class="code">
+
+            <div class="code-title">
+              <p class="language">php</p>
+            </div>
+
+            <p>
+              <span class="pink">$nota <span class="white">=</span> 75</span>;
+
+              <span class="blue">if</span> (<span class="pink">$nota</span> >= <span class="pink">90</span>) {
+              <span class="blue">echo</span> <span class="gream">"A"</span>;
+              } <span class="blue">elseif</span> (<span class="pink">$nota</span> >= <span class="pink">80</span>) {
+              <span class="blue">echo</span> <span class="gream">"B"</span>;
+              } <span class="blue">elseif</span> (<span class="pink">$nota</span> >= <span class="pink">70</span>) {
+              <span class="blue">echo</span> <span class="gream">"C"</span>;
+              } <span class="blue">else</span>{
+              <span class="blue">echo</span> <span class="gream">"D"</span>;
+              }
+
+
+            </p>
+          </div>
+          <br><br><br>
+
+          <h2 style="font-size: 30px; margin-top: 40px;"><b>Laço Switch-case (ou equivalente): </b></h2>
+          <br><br><br>
+
+          <img class="align-self-center" src="../assets/images/switchcase.png" width="40%" height="7%" alt="" />
+          <br><br>
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+            O laço switch-case é uma estrutura de controle que permite avaliar uma expressão e, dependendo
+            do valor dessa expressão, executar
+            diferentes blocos de código. É uma maneira eficiente de lidar com múltiplas condições em
+            comparação com múltiplos if-else if-else.
+            A estrutura básica de um laço switch-case em muitas linguagens de programação, incluindo Java,
+            C, C++, PHP e outras, é a seguinte:
+          </p>
+          <br><br>
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;"><b>Exemplo Básico:</b></p>
+
+          <div class="code">
+
+            <div class="code-title">
+              <p class="language">php</p>
+            </div>
+
+            <p>
+              <span class="pink">$dia <span class="white">=</span> 3</span>;
+
+              <span class="pink">$diaDaSemana</span> = <span class="gream">""</span>;
+
+              <span class="blue">switch</span> (<span class="pink">$dia</span>) {
+              <span class="blue">case</span> <span class="pink">1</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Domingo"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">2</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Segunda-feira"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">3</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Terça-feira"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">4</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Quarta-feira"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">5</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Quinta-feira"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">6</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Sexta-feira"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">case</span> <span class="pink">7</span>:
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Sabado"</span>;
+              <span class="blue">break</span>;
+              <span class="blue">default:</span>
+              <span class="pink">$diaDaSemana</span> = <span class="gream">"Dia inválido"</span>;
+              }
+
+              <span class="blue">echo</span> <span class="gream">"Hoje é "</span> . <span
+                class="pink">$diaDaSemana</span>;
+            </p>
+
+          </div>
+          <br>
+
+          <h2 style="font-size: 20px; margin-top: 40px;"><b>Explicação</b></h2>
+
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+
+            A expressão dentro dos parênteses após a palavra-chave switch é avaliada.
+            O valor dessa expressão é então comparado com cada caso (case) na estrutura.
+            Se o valor da expressão for igual a um dos valores dos casos, o bloco de código correspondente a
+            esse caso é executado.
+            A palavra-chave break é usada para sair do laço switch-case após a execução do bloco de código
+            correspondente a um caso.
+            Isso evita que os blocos de código dos casos subsequentes sejam executados erroneamente.
+            Se o valor da expressão não corresponder a nenhum dos casos listados, o bloco de código dentro
+            do default é executado, se estiver presente.
+            O default é opcional.
+          </p>
+          <br><br>
+
+          <p class="txt text-dark mt-3" style="font-size: 18px;"><b>Exemplo com múltiplas condições em um
+              caso:</b></p>
+
+
+          <div class="code">
+
+            <div class="code-title">
+              <p class="language">php</p>
+            </div>
+
+            <p>
+              <span class="pink">$nota <span class="white">=</span> 75</span>;
+
+              <span class="blue">switch <span class="white">(<span class="blue">true</span>) {</span>
+                case <span class="white">(<span class="pink">$nota </span>>= <span class="pink">90</span>);</span>
+                echo <span class="gream">"MB"</span><span class="white">;</span>
+                break<span class="white">;</span>
+                case <span class="white">(<span class="pink">$nota </span>>= <span class="pink">80</span>);</span>
+                echo <span class="gream">"B"</span><span class="white">;</span>
+                break<span class="white">;</span>
+                case <span class="white">(<span class="pink">$nota </span>>= <span class="pink">60</span>);</span>
+                echo <span class="gream">"R"</span><span class="white">;</span>
+                break<span class="white">;</span>
+                default:
+                echo <span class="gream">"I"</span><span class="white">;</span>
+                <span class="white">}</span>
+              </span>
+            </p>
+          </div>
+
+          <p class="txt text-dark mt-5" style="font-size: 18px;">
+            Neste último exemplo, a expressão true é usada no switch, e cada caso contém uma condição
+            booleana que é avaliada. Isso permite que
+            você use múltiplas condições em um único caso.
+          </p>
+          <br><br>
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <section class="php mt-5">
+      <div class="container text-center">
+        <a name="exercicios"></a>
+        <div class="section-title">
+
+          <h1 class="display-5 fw-semibold text-center">Exercícios sobre if/else</h1>
+          <div id="carouselExample" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="row justify-content-center ">
+                  <div class="card-group w-100 col-12">
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="50">
+                      <i class="bi bi-plus-lg" style="font-size: 80px;"></i>
+                      <i class="bi bi-dash-lg" style="font-size: 80px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 01 - Maior Menor</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(1)maiormenor.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="100">
+                      <div class="icon">
+                        <i class="bi bi-person-check-fill" style="font-size: 160px;"></i>
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 02 - Pode Votar </h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(2)podevotar.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="200">
+                      <div class="icon">
+                        <i class="bi bi-person-circle" style="font-size: 160px;"></i>
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 03 - Login</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(3)login.html" class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="row justify-content-center ">
+                  <div class="card-group w-100 col-12">
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="300">
+                      <i class="bi bi-apple" style="font-size: 160px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 04 - Maçã</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(4)_maca.html" class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+
+
+
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="400">
+                      <i class="bi bi-square-fill" style="font-size: 160px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 05 - Polígono </h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(5)troca_fruta.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+
+
+
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="500">
+                      <i class="bi bi-triangle-fill" style="font-size: 160px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 06 - Triângulo</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(6)_triangulo.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="row justify-content-center ">
+                  <div class="card-group w-100 col-12">
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="600">
+                      <i class="bi bi-bar-chart-line-fill" style="font-size: 160px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 07 - Ordem Crescente</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+
+                        </p>
+                        <a href="./exerciciosIfElse/(7)_ordem_crescente.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="700">
+                      <i class="bi bi-person-standing" style="font-size: 80px;"></i>
+                      <i class="bi bi-person-standing-dress" style="font-size: 80px;"></i>
+
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 08 - Feminino Masculino</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+
+                        </p>
+                        <a href="./exerciciosIfElse/(8)_fem_masc.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                    <div class="card h-100 theme-shadow" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="800">
+                      <i class="bi bi-plus-lg" style="font-size: 160px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 09 - Positivo Negativo</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+                        </p>
+                        <a href="./exerciciosIfElse/(9)_positivo_negativo.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                    <div class="card h-100 theme-shadow mx-auto" data-aos="fade-down-right" data-aos-duration="1000"
+                      data-aos-delay="900">
+                      <i class="bi bi-droplet-fill" style="font-size: 80px;"></i>
+                      <i class="bi bi-person-fill" style="font-size: 80px;"></i>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exercício 10 - Idade Nadador</h5>
+                        <p class="card-text">
+                          Essa seção contém exercícios de lógica de programação, em
+                          PHP.
+
+                        </p>
+                        <a href="./exerciciosIfElse/(10)_idade_nadador.html"
+                          class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+
+    </section>
+    <br><br>
+
+    <center>
+      <h6>Criado por: João Pedro Cardoso dos Santos</h6>
+    </center>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

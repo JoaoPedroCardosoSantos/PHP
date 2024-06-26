@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 45" width="75" height="45">
+	<title>Novo Projeto</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #0c68f0 } 
+	</style>
+	<path id="PHP" class="s0" aria-label="PHP"  d="m19.3 24.8l2.1-2.3v-9.2l-2.1-2.3h-18.8v23h4.2v-9.2zm-2.1-9.2v4.6h-12.5v-4.6zm23.8 18.4h4.3v-23h-4.3v9.2h-12.5v-9.2h-4.2v23h4.2v-9.2h12.5zm25.9-9.2l2.1-2.3v-9.2l-2.1-2.3h-18.8v23h4.2v-9.2zm-2.1-9.2v4.6h-12.5v-4.6z"/>
+	<path id="." class="s1" aria-label="."  d="m68.6 34h5.7v-5.7h-5.7z"/>
+</svg>

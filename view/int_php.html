@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHP. | HOME</title>
+  <link rel="stylesheet" href="../assets/styles/style_global.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-4" href="./index.html">
+        <img src="../assets/images/logo_php.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-4">
+            <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="./projeto.html">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quemsomos.html">Quem Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!-- O QUE É -->
+  <section class="php mt-5">
+    <div class="container text-center">
+
+      
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="section-title " data-aos="fade-down">
+            <h1 class="display-5 fw-semibold">O que é PHP ?</h1>
+            <div class="line"></div>
+            <p>
+              A linguagem de programação PHP é uma escolha popular para aqueles
+              que desejam desenvolver projetos web de qualidade. Devido a sua
+              facilidade e robustez vêm ganhando uma quantidade enorme de adeptos
+            </p>
+          </div>
+          <img class="img-thumbnail" src="../assets/images/php-post-1.png" width="75%" alt="" data-aos="fade-down"
+            data-aos-delay="50">
+          <p class="txt text-dark mt-5">
+            PHP, sigla para "Hypertext Preprocessor" (Pré-processador de Hipertexto), é uma linguagem de programação de
+            uso geral, especialmente adequada para o desenvolvimento web.<br><br>
+
+            Foi criada originalmente por Rasmus Lerdorf em 1994 e desde então tem sido continuamente desenvolvida por
+            uma
+            comunidade de programadores de código aberto.<br><br>
+
+            Em 1997, dois programadores reestruturaram o código do PHP e lançaram o PHP 3, renomeando-o de Personal Home
+            Page para PHP Hypertext Preprocessor, como mencionado anteriormente. Esta versão incluiu os primeiros
+            recursos de orientação a objetos, permitindo aos programadores implementar métodos e códigos orientados a
+            objetos. Testes públicos foram conduzidos e, em junho do ano seguinte, o PHP 3 foi oficialmente lançado.
+            Dois anos depois, surgiu o PHP 4, que expandiu os recursos da linguagem.<br><br>
+
+            Entretanto, o PHP 4 enfrentou um problema significativo: a capacidade de criar cópias de objetos, devido à
+            ausência de handlers ou apontadores na linguagem. Esse problema foi abordado na versão PHP 5.0, que se
+            tornou amplamente preferida pelos programadores.<br><br>
+
+            PHP é uma linguagem de script executada no servidor, o que significa que o código PHP é processado no
+            servidor web para gerar conteúdo dinâmico que é então enviado para o navegador do usuário. Ele é amplamente
+            utilizado para
+            criar
+            sites dinâmicos, aplicativos web e sistemas de gerenciamento de conteúdo (CMS), como WordPress e
+            Drupal.<br><br>
+
+            PHP é conhecido por sua facilidade de aprendizado, ampla compatibilidade com diferentes sistemas
+            operacionais e
+            servidores web, além de sua vasta documentação e suporte pela comunidade.<br><br>
+
+
+            A versão mais recente do PHP é a 8.3.4, lançada em 14 de Março de 2024. A linguagem apresenta constantes
+            atualizações
+            e correções, demonstrando que a linguagem está longe de acabar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="php mt-5">
+    <div class="container text-center">
+
+      
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="section-title " data-aos="fade-down">
+            <h1 class="display-5 fw-semibold">Como PHP funciona ?</h1>
+            <div class="line"></div>
+            <p>
+              Client Side ou Server Side ? Compilavel ou Interpretável ?
+            </p>
+          </div>
+          <img class="img-thumbnail" src="../assets/images/What-is-PHP-How-PHP-works.png" alt="" data-aos="fade-down">
+          <p class="txt text-dark mt-5">
+            O PHP é uma linguagem interpretada, o que significa que o código fonte PHP não é compilado antes da
+            execução. Em vez disso, um interpretador PHP processa o código linha por linha, traduzindo-o em instruções
+            compreensíveis pela máquina.<br><br>
+
+            Para executar código PHP, é necessário um servidor web configurado com suporte ao PHP. Este servidor
+            processa solicitações HTTP dos clientes e executa o código PHP conforme necessário. Servidores web comuns
+            para PHP incluem o Apache e o Nginx, muitas vezes configurados com o módulo PHP.<br><br>
+
+            Quando um navegador solicita uma página web contendo código PHP, o servidor web identifica as partes PHP no
+            arquivo e as encaminha para o interpretador PHP. Este interpreta o código, executa suas instruções e gera a
+            saída, geralmente em formato HTML, embora possa ser qualquer tipo de dado, como imagens ou arquivos
+            PDF.<br><br>
+
+            Uma tarefa comum no desenvolvimento web é a interação com bancos de dados. O PHP oferece suporte a vários
+            bancos de dados, como MySQL, PostgreSQL e SQLite, permitindo a criação de aplicativos web dinâmicos que
+            armazenam e recuperam informações do banco de dados.<br><br>
+
+            Uma das vantagens principais do PHP é sua capacidade de gerar conteúdo dinâmico. Isso significa que é
+            possível criar páginas web que se adaptam e respondem às solicitações dos usuários, exibindo informações
+            diferentes com base em parâmetros fornecidos na solicitação.<br><br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="php mt-5">
+    <div class="container text-center">
+
+      
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="section-title " data-aos="fade-down">
+            <h1 class="display-5 fw-semibold">Ainda vale a pena usar o PHP ?</h1>
+            <div class="line"></div>
+            <p>
+              Afinal, uma linguagem tão antiga como o PHP, ainda vale a pena usar a linguagem de programação PHP em suas
+              aplicações ?
+            </p>
+          </div>
+          <img class="img-thumbnail" src="../assets/images/uso-do-php-estatistica.jpg" width="75%" alt=""
+            data-aos="fade-down" data-aos-delay="50">
+          <p class="txt text-dark mt-5">
+
+            No mundo dinâmico e em constante evolução do desenvolvimento web, o PHP permanece como uma escolha sólida e
+            relevante para muitos desenvolvedores. Apesar do surgimento de novas tecnologias e linguagens, o PHP mantém
+            sua posição como uma das linguagens mais populares e amplamente adotadas para o desenvolvimento de
+            aplicativos web.<br><br>
+
+          </p>
+
+          <h5 class="h5 text-start fw-bold">1. COMUNIDADE ATIVA, ALÉM DA BASE SÓLIDA DE USUÁRIOS.</h5>
+          <p class="txt text-dark mb-5">O PHP mantém uma comunidade ativa de desenvolvedores e uma base de usuários
+            sólida,
+            como
+            demonstra o gráfico, sendo aproximadamente 79,1% dos bancos de dados apresentando a linguagem em sua
+            manipulação, no Brasil especificamente esse valor é de aproximadamente 70%, isto é, mais da metade dos
+            servidores ainda utilizam a linguagem, embora a maioria ainda usem versões antigas do PHP.
+          </p>
+
+          <h5 class="h5 text-start fw-bold">2. FACILIDADE DE USO E APRENDIZAGEM.</h5>
+          <p class="txt text-dark mb-5">
+            Uma das principais vantagens do PHP é sua facilidade de aprendizado e utilização. Sua sintaxe intuitiva e
+            familiar facilita para os desenvolvedores, permitindo que eles comecem a trabalhar rapidamente e sejam
+            produtivos em pouco tempo.
+          </p>
+
+          <h5 class="h5 text-start fw-bold">3. MELHORIAS CONTÍNUAS EM EFICIÊNCIA.</h5>
+          <p class="txt text-dark mb-5">
+            Ao longo dos anos, o PHP passou por melhorias significativas em termos de desempenho e eficiência. As
+            versões mais recentes incluem otimizações de código e recursos que tornam os aplicativos web mais rápidos e
+            eficientes.
+          </p>
+
+          <h5 class="h5 text-start fw-bold">4. SUPORTE NATIVO A BANCO DE DADOS</h5>
+          <p class="txt text-dark mb-5">
+            O PHP oferece suporte nativo a uma variedade de bancos de dados, simplificando a integração de aplicativos
+            web com sistemas de gerenciamento de banco de dados. Além disso, ele se integra perfeitamente com outras
+            tecnologias web, como HTML, CSS e JavaScript, facilitando o desenvolvimento de aplicativos completos.
+          </p>
+
+          <h5 class="h5 text-start fw-bold">5. FORTE TENDÊNCIA E EVOLUÇÃO DESENFREADA</h5>
+          <p class="txt text-dark mb-5">
+            Com uma comunidade ativa e em constante evolução, o PHP continua a ser uma escolha viável para o
+            desenvolvimento web. Sua adaptabilidade e capacidade de evoluir com as demandas da indústria garantem um
+            futuro promissor para a linguagem.
+          </p>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <p class="text-center">Created by: Augusto Akira Miasato</p>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

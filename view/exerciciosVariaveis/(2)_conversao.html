@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/styles/style_global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Execício 02</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline fixed-top text-uppercase">
+        <div class="container">
+            <a class="navbar-brand me-4" href="../../view/index.html">
+                <img src="../../assets/images/logo_php.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4">
+                        <a class="nav-link " aria-current="page" href="../../view/index.html">Início</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="../../view/projeto.html">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../view/quemsomos.html">Quem Somos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="exercicio">
+        <div class="container">
+            <a href="../../view/variaveis.html" id="arrow" class="align-self-start fs-2 mt-5 ">
+                <i class="bi bi-arrow-left m-3"> </i>
+            </a>
+            <div class="row mt-5 text-center justify-content-center">
+                <div class="col-5 mt-3">
+                    <h1 class="display-5 mb-5">
+                        Programa de converção de moedas
+                    </h1>
+                    <div class="line"></div>
+                    <p class="text-center text-dark">O programa deve receber o nome de usuário, o valor atual da cotação do dólar em reaise totalem real que pretende converter;g.Converter o valor em real digitado para dólar.h.Mostrar na tela: Nome do usuário, Valor em reais, Cotação do dólar do dia, Valor convertido em dólar.</p>
+                    <form class="btn" action="../../controller/(2)_conversao.php" method="post">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" name="txtnome" class="form-control" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput">Nome do usuário: </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" name="txtdollar" class="form-control" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput">Valor do dollar hoje: </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" name="txtreal" class="form-control" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput">Digite o valor em real: </label>
+                        </div>
+
+                        <input class="btn btn-dark" type="submit" name="submit" value="ENVIAR">
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

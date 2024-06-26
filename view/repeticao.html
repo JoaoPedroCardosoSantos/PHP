@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP. | HOME</title>
+    <link rel="stylesheet" href="../assets/styles/style_global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-4" href="./index.html">
+                <img src="../assets/images/logo_php.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="./projeto.html">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quemsomos.html">Quem Somos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!-- O QUE É -->
+    <section class="php-one mt-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="section-title " data-aos="fade-down">
+                        <h1 class="display-5 fw-semibold">O que são<br> Estruturas de Repetição ?</h1>
+                        <div class="line"></div>
+                        <p>
+                            Neste trabalho exploraremos o que são Estruturas de Repetição presentes na Linguagem de
+                            Programação PHP, além de trazer inúmeros exemplos de uso.
+                        </p>
+                    </div>
+                    <img class="img-thumbnail" src="../assets/images/loop.png" width="75%" alt="" data-aos="fade-down"
+                        data-aos-delay="50">
+                    <p class="txt text-dark mt-5">
+
+                        Ao desenvolver aplicações, desde sites simples até sistemas complexos, as estruturas de
+                        repetição são recursos fundamentais. Elas nos permitem lidar com uma variedade de tarefas, desde
+                        exibir grandes volumes de dados para os usuários finais até resolver problemas matemáticos, como
+                        a sequência de Fibonacci.<br><br>
+
+                        No PHP, existem várias maneiras de criar loops de repetição. Podemos utilizá-los para iterar um
+                        determinado número de vezes ou para percorrer estruturas de dados como arrays e objetos.<br>
+                        <br>
+
+                        Essas estruturas nos proporcionam flexibilidade e eficiência na manipulação e processamento de
+                        dados, tornando o desenvolvimento de aplicações mais dinâmico e poderoso.<br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="php section-padding border-top">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="section-title " data-aos="fade-down">
+                        <h1 class="display-5 fw-semibold">Estrutura FOR</h1>
+                        <div class="line"></div>
+                        <p>
+                            Uma das Estruturas de Repetição mais utilizadas e presente em quase todas as Linguagens de
+                            Programação. Sendo usado mormente para iterar definir loops e iterar arrays.
+                        </p>
+                    </div>
+                    <img class="img-thumbnail" src="../assets/images/for.png" alt="" data-aos="fade-down">
+                    <p class="txt text-dark mt-5">
+                        A estrutura de repetição "for" é a mais comumente utilizada durante o desenvolvimento em PHP.
+                        Ela permite a criação de loops que vão de um ponto de partida a outro pré-definido, tudo dentro
+                        da sintaxe do próprio loop. Além disso, sua sintaxe é altamente flexível, destacando-se como a
+                        mais versátil dentre todas as estruturas de repetição do PHP. Basicamente, sua estrutura é
+                        composta por três expressões, como exemplificado abaixo:
+                    </p>
+
+                    <h2 class="text-start fw-bolder my-3 mt-5">Loop Básico:</h2>
+                    <p class="text-start">Exemplo básico do uso do FOR, com a primeira entrada de valor
+                        representando o INÍCIO do Loop, a segunda o FIM do Loop e o terceiro o INCREMENTO do LOOP
+                    </p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4 ">
+                                <em class="parametro">for</em> ($i = 0; $i < 5; $i++) {<br>
+                                    echo <em class="string">"Sintaxe Básica"</em> <br>
+                                    }
+                                    <br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-start fw-bolder my-3 mt-5">Loop Infinito:</h2>
+                    <p class="text-start">Sendo bem sugestivo, recomenda-se precaução antes de usar esse tipo de
+                        Estrutura !</p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4 ">
+
+                                <em class="parametro">for</em> (; ;) {<br>
+                                echo <em class="string">"Loop Infinito !"</em> <br>
+                                }
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-start fw-bolder my-3 mt-5">Loop for em Iteráveis: Iteração em Arrays</h2>
+                    <p class="text-start">Um dos usos mais frequentes do FOR, sendo o uso do mesmo para
+                        percorrer ARRAYS</p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4 ">
+                                $nomes = [<em class="string">"Alice", "Bob", "Charlie"</em>];<br>
+                                <em class="parametro">foreach</em> ($nomes as $nome) {<br>
+                                echo $nome;<br>
+                                }
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-start">Neste exemplo, $nomes é o array que você deseja percorrer, e $nome é uma
+                        variável que irá conter cada elemento do array em cada iteração.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="php section-padding border-top">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="section-title " data-aos="fade-down">
+                        <h1 class="display-5 fw-semibold">Estrutura While</h1>
+                        <div class="line"></div>
+                        <p>
+                            Outra estrutura de repetição presente no PHP e muitas outras Linguagens é o While, o qual
+                            permite o início de um LOOP até que a CONDIÇÃO = TRUE.
+                        </p>
+                    </div>
+                    <img class="img-thumbnail" src="../assets/images/loop.jpg" width="75%" alt="" data-aos="fade-down"
+                        data-aos-delay="50">
+                    <p class="txt text-dark mt-5">
+                        O while é uma estrutura de controle em PHP (e em muitas outras linguagens de programação) usada
+                        para repetir um bloco de código enquanto uma condição específica é verdadeira. Ele executa o
+                        bloco de código repetidamente até que a condição especificada seja avaliada como falsa.
+                    </p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4">
+                                <em class="parametro">while</em>(condicao){<br>
+                                echo "Olá Mundo";<br>
+                                }
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-start fw-bolder my-3 mt-5">Do-While</h2>
+                    <p class="text-start">Uma forma alternativa do uso do WHILE se dá com o uso do DO. </p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4 ">
+                                $i = 0;<br>
+                                <em class="parametro">do</em>{<br>
+                                // Bloco de código a ser repetido<br>
+                                $i++;<br>
+                                } <br>
+                                <em class="parametro">while</em> ($i < 10); </p>
+                        </div>
+                    </div>
+                    <p class="text-start text-dark">É semelhante ao while, mas a verificação da condição ocorre após a
+                        execução do
+                        bloco de código, garantindo que o bloco de código seja executado pelo menos uma vez, mesmo se a
+                        condição inicialmente for falsa. Como a demonstrada acima.</p>
+
+                    <h2 class="text-start fw-bolder my-3 mt-5">Break e Continue</h2>
+                    <p class="text-start">Formas adicionais para controle de seus loops</p>
+                    <div class="code text-start">
+                        <div class="code-title">
+                            <p class="ms-4">php</p>
+                        </div>
+                        <div class="code-text">
+                            <p class="ms-4 ">
+                                <em class="parametro">for</em> <em class="string">($i = 0; $i < 10; $i++)</em> {<br>
+                                        <em class="parametro">&ensp;&ensp; if</em> <em class="string">($i === 5)</em>
+                                        {<br>
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;echo $i;<br>
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;<em class="parametro">break</em>;<br>
+                                        }<br>
+                                        <em class="parametro">&ensp;&ensp;&ensp;if</em> <em class="string">($i % 2 ===
+                                            0)</em>
+                                        {<br>
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;echo $i;<br>
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;<em class="parametro">continue</em>;<br>
+                                        }
+                                        }
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-start text-dark">O break é usado para sair de um loop antes que a condição normal de
+                        término seja atendida. O continue interrompe a iteração atual e passa para a próxima. Aqui está
+                        um exemplo:</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="php mt-5">
+        <div class="container text-center">
+            <a name="exercicios"></a>
+            <div class="section-title">
+
+                <h1 class="display-5 fw-semibold text-center">Exercícios sobre Estrutura de Repetição</h1>
+                <div id="carouselExample" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="row justify-content-center ">
+                                <div class="card-group w-100 col-12">
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="50">
+                                        <i class="bi bi-table" style="font-size: 160px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 01 - Tabuada </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./exerciciosLoops/(1)tabuada.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="100">
+                                        <div class="icon">
+                                            <i class="bi bi-1-square-fill" style="font-size: 140px;"></i>
+                                            <i class="bi bi-2-square-fill" style="font-size: 140px;"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 02 - Par Impar </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./exerciciosLoops/(2)parImpar.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="200">
+                                        <div class="icon">
+                                            <i class="bi bi-distribute-horizontal" style="font-size: 160px;"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 03 - Intervalo </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./exerciciosLoops/intervalo.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="row justify-content-center ">
+                                <div class="card-group w-100 col-12">
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="300">
+                                        <div class="icon">
+                                            <i class="bi bi-person-circle" style="font-size: 160px;"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 04 - Login </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./(4)login.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="400">
+                                        <i class="bi bi-square-fill" style="font-size: 160px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício ? </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./(5)????.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="500">
+                                        <i class="bi bi-1-circle-fill" style="font-size: 80px;"></i>
+                                        <i class="bi bi-2-circle-fill" style="font-size: 80px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 06 - Número Primo</h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./exerciciosLoops/(6)numeroPrimo.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="row justify-content-center ">
+                                <div class="card-group w-100 col-12">
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="600">
+                                        <i class="bi bi-trophy-fill" style="font-size: 160px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 07 - Academia</h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+
+                                            </p>
+                                            <a href="./exerciciosLoops/(7)peso.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="700">
+                                        <i class="bi bi-person-standing" style="font-size: 80px;"></i>
+                                        <i class="bi bi-person-standing-dress" style="font-size: 80px;"></i>
+
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 08 - ????</h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+
+                                            </p>
+                                            <a href="./(8)?????.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                    <div class="card h-100 theme-shadow" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="800">
+                                        <i class="bi bi-plus-lg" style="font-size: 160px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 09 - ??????</h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+                                            </p>
+                                            <a href="./(9)?????.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                    <div class="card h-100 theme-shadow mx-auto" data-aos="fade-down-right"
+                                        data-aos-duration="1000" data-aos-delay="900">
+                                        <i class="bi bi-droplet-fill" style="font-size: 80px;"></i>
+                                        <i class="bi bi-person-fill" style="font-size: 80px;"></i>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Exercício 10 -  </h5>
+                                            <p class="card-text">
+                                                Essa seção contém exercícios de lógica de programação, em
+                                                PHP.
+
+                                            </p>
+                                            <a href="./(10)???????.html"
+                                                class="btn btn-outline-primary mt-auto stretched-link">EXECUTAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+    </section>
+    <p class="text-center">Created by: Augusto Akira Miasato</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
